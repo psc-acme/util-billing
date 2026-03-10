@@ -1,0 +1,39 @@
+{
+    "name": "psc-acme/util-billing",
+    "description": "Package util-billing for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\UtilBilling\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.1",
+        "symfony/symfony": "^6.3",
+        "league/commonmark": "^2.0",
+        "psc-acme/worker-billing": "^1.0",
+        "psc-acme/processor-billing": "^1.0"
+    },
+    "require-dev": {
+        "vimeo/psalm": "^5.0",
+        "phpunit/phpunit": "^11.0"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
